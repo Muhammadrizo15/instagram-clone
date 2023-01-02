@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from './Components/Home/Home'
+import Profile from './Components/Profile/Profile'
+import Explore from './Components/Explore/Explore'
+import Inbox from './Components/Chat/Inbox'
+import Ayub from './Components/Chat/ayukhan_x'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+          {/*  Home page  */}
+          <Route path={"/"} element={<Home />} />
+
+          {/* Profle page */}
+          <Route path={"/profile"} element={<Profile />} />
+
+
+          {/* Explore */}
+          <Route path={"/explore"} element={<Explore />} />
+
+          {/* Chat */}
+          <Route path={"/inbox"} element={<Inbox />} />
+
+          {/* zxc ayub */}
+          <Route path={"/inbox/14564"} element={<Ayub />} />
+
+
+      </Routes>
     </div>
   );
 }
