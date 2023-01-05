@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './Home.scss'
 import Sidebar from '../Sidebar/Sidebar'
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -43,10 +44,13 @@ function App() {
           <div className="posts">
             <div className="post">
               <div className="user which__user__this__post">
-                <div className='which__user__this__post__info'>
-                  <img src="../images/users/1.jpg" alt="" />
-                  <p>Ayubkhan</p>
-                </div>
+                <Link to="/profile">
+                  <div className='which__user__this__post__info'>
+                    <img src="../images/users/1.jpg" alt="" />
+                    <p>Ayubkhan</p>
+                  </div>
+                </Link>
+
                 <div className="icon__with__padding">
                   <svg aria-label="Дополнительно" color="#fafafa" fill="#fafafa" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
                 </div>

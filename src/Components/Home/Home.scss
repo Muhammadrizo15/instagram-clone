@@ -91,6 +91,9 @@
                     margin: 8px 4px 8px 12px;
                     display: flex;
                     align-items: center;
+                    a {
+                        color: #fff;
+                    }
                     justify-content: space-between;
 
                     .which__user__this__post__info {
@@ -99,6 +102,7 @@
                         p {
                             margin-left: 10px;
                         }
+                        
                     }
 
                     img {
